@@ -1,4 +1,4 @@
-# Button Group
+# Input Group
 
 Predix Experience Input Group module is a simple implementation of input groups.
 
