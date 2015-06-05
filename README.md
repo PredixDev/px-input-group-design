@@ -6,6 +6,10 @@ Predix Experience Input Group module is a simple implementation of input groups.
 
 You can review input group styles and recommended markup here: https://github.build.ge.com/pages/PXd/px-input-group-design
 
+## Sass Documentation
+
+You can review Sass Documentation here: https://github.build.ge.com/pages/PXd/px-input-group-design/sassdoc
+
 ## Dependencies
 
 Px's Input Group module depends on two other PXd modules:
