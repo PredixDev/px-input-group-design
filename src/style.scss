@@ -1,21 +1,11 @@
 $imported-once-files        : ();
 
-// Settings
-@import "../px-defaults-design/settings.defaults";
-@import "../px-colors-design/settings.colors";
-
-// Tools
-@import "../px-functions-design/tools.functions";
-@import "../px-mixins-design/tools.mixins";
-
 // Generic
 @import "../px-normalize-design/generic.normalize";
 @import "../px-box-sizing-design/generic.box-sizing";
-@import "../px-helpers-design/generic.helpers";
 
 // Base
 @import "../px-viewport-design/base.viewport";
-@import "../px-flexbox-design/base.flexbox";
 @import "../px-typography-design/base.typography";
 @import "../px-code-design/base.code";
 @import "../px-iconography-design/base.iconography";
@@ -24,8 +14,6 @@ $imported-once-files        : ();
 $inuit-enable-btn--primary  : true;
 $inuit-enable-btn--tertiary : true;
 
-@import "../px-list-bare-design/objects.list-bare";
-
 // Input Group
 @import "../objects.input-group";
 
@@ -33,4 +21,3 @@ $inuit-enable-btn--tertiary : true;
 $inuit-enable-margins--huge : true;
 
 @import "../px-spacing-responsive-design/trumps.spacing-responsive";
-@import "../px-widths-responsive-design/trumps.widths-responsive";
