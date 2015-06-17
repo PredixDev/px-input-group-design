@@ -1,6 +1,6 @@
 {
   "name": "px-input-group-design",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "authors": [
     "General Electric"
   ],
@@ -13,7 +13,7 @@
     "groups"
   ],
   "license": "Apache 2",
-  "homepage": "git://github.build.ge.com/PXd/px-input-group-design.git",
+  "homepage": "https://github.build.ge.com/PXd/px-input-group-design.git",
   "private": true,
   "ignore": [
     "**/.*",
@@ -23,13 +23,13 @@
     "tests"
   ],
   "dependencies": {
-    "px-buttons-design": "git://github.build.ge.com/PXd/px-buttons-design.git#~0.4.0",
-    "px-forms-design": "git://github.build.ge.com/PXd/px-forms-design.git#~0.3.0"
+    "px-buttons-design": "https://github.build.ge.com/PXd/px-buttons-design.git#~0.4.0",
+    "px-forms-design": "https://github.build.ge.com/PXd/px-forms-design.git#~0.3.0"
   },
   "devDependencies" : {
-    "px-code-design": "git://github.build.ge.com/PXd/px-code-design.git#~0.2.0",
-    "px-iconography-design": "git://github.build.ge.com/PXd/px-iconography-design.git#~0.2.0",
-    "px-list-bare-design": "git://github.build.ge.com/PXd/px-list-bare-design.git#~0.2.0",
-    "px-starter-kit-design": "git://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.0"
+    "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.0",
+    "px-iconography-design": "https://github.build.ge.com/PXd/px-iconography-design.git#~0.2.0",
+    "px-list-bare-design": "https://github.build.ge.com/PXd/px-list-bare-design.git#~0.2.0",
+    "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.0"
   }
 }
