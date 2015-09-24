@@ -2,13 +2,10 @@
 
 Predix Experience Input Group module is a simple implementation of input groups.
 
-## Demo
 
-You can review input group styles and recommended markup here: https://github.com/pages/PredixDev/px-input-group-design
 
-## Sass Documentation
 
-You can review Sass Documentation here: https://github.com/pages/PredixDev/px-input-group-design/sassdoc
+
 
 ## Dependencies
 
