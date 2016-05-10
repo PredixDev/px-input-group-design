@@ -1,3 +1,7 @@
+v0.2.12
+==============================
+* updated oss notice and readme, pointing to gh-pages
+
 v0.2.11
 ==============================
 * Added OSS notice and changed the repo to be public in bower.
