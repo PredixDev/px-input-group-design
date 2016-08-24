@@ -12,7 +12,6 @@
     "input",
     "groups"
   ],
-  "license": "Apache 2",
   "homepage": "https://github.com/PredixDev/px-input-group-design.git",
   "private": false,
   "ignore": [
@@ -26,7 +25,7 @@
     "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.0",
     "px-forms-design": "https://github.com/PredixDev/px-forms-design.git#~0.3.0"
   },
-  "devDependencies" : {
+  "devDependencies": {
     "px-code-design": "https://github.com/PredixDev/px-code-design.git#~0.2.0",
     "px-iconography-design": "https://github.com/PredixDev/px-iconography-design.git#~0.2.0",
     "px-list-bare-design": "https://github.com/PredixDev/px-list-bare-design.git#~0.2.0",
