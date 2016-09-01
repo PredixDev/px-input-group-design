@@ -5,7 +5,12 @@
 ////
 
 @import "px-forms-design/_base.forms.scss";
-@import "px-buttons-design/_objects.buttons.scss";
+
+// commented out because we just want the variables, not the styles
+// @import "px-buttons-design/_objects.buttons.scss";
+
+/// @type String [default] - Prepend value for all generated classes
+$inuit-btn-namespace            : $inuit-namespace !default;
 
 /// @type String [default] - Prepend value for all generated classes
 $inuit-input-group-namespace    : $inuit-namespace !default;
