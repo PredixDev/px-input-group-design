@@ -33,6 +33,9 @@ PAGE. IT SHOULD NOT PROVIDE RULES FOR THE MODULE.
 @import "px-typography-design/_base.typography.scss";
 
 // Objects
+$inuit-enable-btn--primary      : true;
+@import "px-buttons-design/_objects.buttons.scss";
+
 @import "../_objects.input-group.scss";
 
 // Component - THINGS TO SHOW YOUR DEMO

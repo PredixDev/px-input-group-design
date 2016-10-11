@@ -30,6 +30,7 @@
     "px-demo-snippet": "^0.6.4",
     "px-sass-doc": "^0.1.4",
     "px-spacing-design": "^0.3.8",
-    "px-iconography-design" :"^0.2.0"
+    "px-iconography-design": "^0.2.0",
+    "px-buttons-design": "^0.4.26"
   }
 }

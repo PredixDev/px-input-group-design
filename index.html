@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
 <template id="just-for-demo" is="dom-bind">
 
 <!-- 1: Describe Module -->
@@ -29,31 +30,54 @@
     "https://github.com/PredixDev/px-forms-design",
     "https://github.com/PredixDev/px-buttons-design"
   ]'
-  selected-options="{{selectedOptions}}">
+  selected-options="{{selectedOptions}}"
+  tabs='["Default","Other"]' selected-tab="{{selectedTab}}">
 
-<!-- 3: Make HTML Demo -->
+<!-- FOR 'DEFAULT' TAB -->
+<template is="dom-if" if="[[_tabIs('Default',selectedTab)]]" restamp="true">
+
 <section data-slot="demoHTML">
 
 <span class="form-field input-group">
-  <span class="input-group__addon">$</span>
   <input class="text-input" type="text">
   <span class="input-group__addon">.00</span>
 </span>
-
 </section>
 
-<!-- 4: Set Import Slot -->
 <section data-slot="import">
 @import 'px-input-group-design/_objects.input-group.scss';
 </section>
+
+</template>
+
+<!-- FOR 'OTHER' TAB -->
+<template is="dom-if" if="[[_tabIs('Other',selectedTab)]]" restamp="true">
+
+<section data-slot="demoHTML">
+
+<div class="form-field input-group">
+  <input class=text-input type=…>
+  <button class="btn input-group__addon" type=button>Options</button>
+  <button class="btn btn--primary input-group__addon" type=button>Search</button>
+</div>
+</section>
+
+<section data-slot="import">
+@import 'px-input-group-design/_objects.input-group.scss';
+</section>
+
+</template>
+
 
 <!-- 5: Set Usage HTML -->
 <section data-slot="usage">
 Use the following HTML to set up your project:
 ```
 <!-- Default toggle -->
-<input id="toggle2" class="toggle__input" type="checkbox">
-<label for="toggle2" class="toggle__label"></label>
+<span class="form-field input-group">
+  <input class="text-input" type="text">
+  <span class="input-group__addon">.00</span>
+</span>
 
 <!-- Small toggle -->
 <div class="form-field input-group">
@@ -63,8 +87,11 @@ Use the following HTML to set up your project:
 </div>
 
 <!-- Large toggle -->
-<input id="toggle4" class="toggle__input toggle__input--large" type="checkbox">
-<label for="toggle4" class="toggle__label toggle__label--large"></label>
+<div class="form-field input-group">
+  <span class="input-group__addon">$</span>
+  <input class=text-input type=text>
+  <span class="input-group__addon">.00</span>
+</div>
 
 <!-- Huge toggle -->
 <input id="toggle5" class="toggle__input toggle__input--huge" type="checkbox">
@@ -79,9 +106,10 @@ Use the following HTML to set up your project:
 <script>
   var template = document.querySelector('template[is=dom-bind]');
 
-  Polymer.Base.async(function() {
-    template.fire('px-sass-doc-demo-updated',{});
-  }, 20);
+  template._tabIs = function(tabName) {
+    var selected = template.selectedTab || "";
+    return selected === tabName;
+  }
 </script>
 </body>
 </html>
