@@ -7,15 +7,24 @@
 @import "px-forms-design/_base.forms.scss";
 @import "px-buttons-design/_objects.buttons.scss";
 
-/// @type String [default] - Prepend value for all generated classes
+/// Sets a prepended namespace for all generated classes.
+///
+/// @group px-input-group-design:variables:style
+/// @type String [default]
 $inuit-input-group-namespace    : $inuit-namespace !default;
 
-/// @type Color [default] - Font color
+/// Sets the font color.
+///
+/// @group px-input-group-design:variables:style
+/// @type Color [default]
 $inuit-input-group-color        : $gray5 !default;
 
-/// @type Color [default] - Icon color
+/// Sets the icon color.
+///
+/// @group px-input-group-design:variables:style
+/// @type Color [default]
 $inuit-input-group-color--icon  : $gray7 !default;
-  
+
 .#{$inuit-input-group-namespace}input-group,
 %#{$inuit-input-group-namespace}input-group {
   display: flex;
