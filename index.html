@@ -31,11 +31,8 @@
   ]'
   selected-options="{{selectedOptions}}">
 
-<!-- 2: Set Options -->
-
-
 <!-- 3: Make HTML Demo -->
-<section data-slot="demoHTML" id="demoContainer">
+<section data-slot="demoHTML">
 
 <span class="form-field input-group">
   <span class="input-group__addon">$</span>
@@ -47,7 +44,7 @@
 
 <!-- 4: Set Import Slot -->
 <section data-slot="import">
-{{importCode}}
+@import 'px-input-group-design/_objects.input-group.scss';
 </section>
 
 <!-- 5: Set Usage HTML -->
@@ -82,16 +79,9 @@ Use the following HTML to set up your project:
 <script>
   var template = document.querySelector('template[is=dom-bind]');
 
-  document.addEventListener('px-sass-doc-options-updated', function(evt) {
-    template.importCode = template._importCode();
-  });
-
-
-  template._importCode = function() {
-    var opts = template.selectedOptions || {}, strings = [];
-
-    return (strings.join("\n") + "\n@import 'px-input-group-design/_objects.input-group.scss';").trim();
-  };
+  Polymer.Base.async(function() {
+    template.fire('px-sass-doc-demo-updated',{});
+  }, 20);
 </script>
 </body>
 </html>
