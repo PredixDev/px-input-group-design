@@ -15,15 +15,13 @@
   <!-- 0: Import Module Styles -->
   <link rel="stylesheet" type="text/css" href="css/px-input-group-design-demo.css" />
 </head>
-
 <body>
-
 <template id="just-for-demo" is="dom-bind">
 
 <!-- 1: Describe Module -->
 <px-sass-doc
   module-name="px-input-group-design"
-  description="WORDS"
+  description="Predix UI Input Group module is a simple implementation of input groups. Add elements to an input field for context and/or inline actions."
   layer="objects"
   sassdoc-path="sassdoc.json"
   dependencies='[
@@ -73,29 +71,26 @@
 <section data-slot="usage">
 Use the following HTML to set up your project:
 ```
-<!-- Default toggle -->
+<!-- Basic input group -->
 <span class="form-field input-group">
   <input class="text-input" type="text">
   <span class="input-group__addon">.00</span>
 </span>
 
-<!-- Small toggle -->
+<!-- Input group with styled buttons -->
 <div class="form-field input-group">
-  <button class="btn input-group__addon" type=button>…</button>
-  <button class="btn input-group__addon" type=button>…</button>
   <input class=text-input type=…>
+  <button class="btn input-group__addon" type=button>Options</button>
+  <button class="btn btn--primary input-group__addon" type=button>Search</button>
 </div>
 
-<!-- Large toggle -->
+<!-- Input group with split content -->
 <div class="form-field input-group">
   <span class="input-group__addon">$</span>
-  <input class=text-input type=text>
+  <input class="text-input" type="text">
   <span class="input-group__addon">.00</span>
 </div>
 
-<!-- Huge toggle -->
-<input id="toggle5" class="toggle__input toggle__input--huge" type="checkbox">
-<label for="toggle5" class="toggle__label toggle__label--huge"></label>
 ```
 </section>
 

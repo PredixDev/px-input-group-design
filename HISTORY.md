@@ -1,3 +1,7 @@
+v0.2.13
+==============================
+* updated to new demo
+
 v0.2.12
 ==============================
 * updated oss notice and readme, pointing to gh-pages
