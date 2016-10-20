@@ -29,10 +29,10 @@
     "https://github.com/PredixDev/px-buttons-design"
   ]'
   selected-options="{{selectedOptions}}"
-  tabs='["Default","Other"]' selected-tab="{{selectedTab}}">
+  tabs='["Basic","Other"]' selected-tab="{{selectedTab}}">
 
 <!-- FOR 'DEFAULT' TAB -->
-<template is="dom-if" if="[[_tabIs('Default',selectedTab)]]" restamp="true">
+<template is="dom-if" if="[[_tabIs('Basic',selectedTab)]]" restamp="true">
 
 <section data-slot="demoHTML">
 
@@ -77,12 +77,14 @@ Use the following HTML to set up your project:
   <span class="input-group__addon">.00</span>
 </span>
 
+
 <!-- Input group with styled buttons -->
 <div class="form-field input-group">
   <input class="text-input" type=…>
   <button class="btn input-group__addon" type="button">Options</button>
   <button class="btn btn--primary input-group__addon" type="button">Search</button>
 </div>
+
 
 <!-- Input group with split content -->
 <div class="form-field input-group">
