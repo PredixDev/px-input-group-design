@@ -31,13 +31,13 @@
   selected-options="{{selectedOptions}}"
   tabs='["Basic","Other"]' selected-tab="{{selectedTab}}">
 
-<!-- FOR 'DEFAULT' TAB -->
+<!-- FOR 'Basic' TAB -->
 <template is="dom-if" if="[[_tabIs('Basic',selectedTab)]]" restamp="true">
 
 <section data-slot="demoHTML">
 
 <span class="form-field input-group">
-  <input class="text-input" type="text">
+  <input class="text-input input--regular" type="text">
   <span class="input-group__addon">.00</span>
 </span>
 </section>
@@ -54,9 +54,9 @@
 <section data-slot="demoHTML">
 
 <div class="form-field input-group">
-  <input class=text-input>
-  <button class="btn input-group__addon" type=button>Options</button>
-  <button class="btn btn--primary input-group__addon" type=button>Search</button>
+  <input class="text-input">
+  <button class="btn input-group__addon" type="button">Options</button>
+  <button class="btn btn--primary input-group__addon" type="button">Search</button>
 </div>
 </section>
 

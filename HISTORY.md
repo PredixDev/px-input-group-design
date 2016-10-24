@@ -1,3 +1,7 @@
+v0.2.18
+==============================
+* removed --strip-comments from ghp.sh
+
 v0.2.17
 ==============================
 * minor text changes to demo
