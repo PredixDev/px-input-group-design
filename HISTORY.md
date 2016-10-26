@@ -1,3 +1,7 @@
+v0.2.19
+==============================
+* updated to px-sass-doc#0.2.8
+
 v0.2.18
 ==============================
 * removed --strip-comments from ghp.sh
