@@ -1,6 +1,6 @@
 {
     "name": "px-input-group-design",
-    "version": "0.2.23",
+    "version": "0.2.24",
     "description": "Input group styles for Predix Experience",
     "private": false,
     "scripts": {
