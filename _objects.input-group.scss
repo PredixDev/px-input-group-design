@@ -17,13 +17,13 @@ $inuit-input-group-namespace    : $inuit-namespace !default;
 ///
 /// @group px-input-group-design:variables:style
 /// @type Color [default]
-$inuit-input-group-color        : $gray5 !default;
+$inuit-input-group-color        : var(--px-input-group-text-color, $gray5) !default;
 
 /// Sets the icon color.
 ///
 /// @group px-input-group-design:variables:style
 /// @type Color [default]
-$inuit-input-group-color--icon  : $gray7 !default;
+$inuit-input-group-color--icon  : var(--px-input-group-icon-color, $gray7) !default;
 
 .#{$inuit-input-group-namespace}input-group,
 %#{$inuit-input-group-namespace}input-group {
