@@ -15,7 +15,7 @@ Install this module and its dependencies using bower:
 
     bower install --save px-input-group-design
 
-Once installed, `@import` into your project's Sass file in its Objects layer:
+Once installed, `@import` into your project's Sass file in its **Objects** layer:
 
     @import "px-input-group-design/_objects.input-group.scss";
 
