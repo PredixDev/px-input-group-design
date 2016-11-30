@@ -1,10 +1,10 @@
 {
     "name": "px-input-group-design",
-    "version": "0.2.24",
+    "version": "0.2.25",
     "authors": [
         "General Electric"
     ],
-    "description": "Input group styles for Predix Experience",
+    "description": "Input group styles for Predix UI",
     "main": "_objects.input-group.scss",
     "keywords": [
         "px",
