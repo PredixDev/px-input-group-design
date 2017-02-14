@@ -1,3 +1,7 @@
+v1.1.3
+==================
+* updated to new demo using px-demo classes
+
 v1.1.2
 ==================
 * rebuilt sass with new colors
