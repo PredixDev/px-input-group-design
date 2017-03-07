@@ -39,7 +39,9 @@ $inuit-enable-btn--primary      : true;
 @import "../_objects.input-group.scss";
 
 // Component - THINGS TO SHOW YOUR DEMO
-
+.input-group {
+  max-width: 400px;
+}
 
 // Trumps
 @import "inuit-clearfix/_trumps.clearfix.scss";

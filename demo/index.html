@@ -22,42 +22,45 @@
     "https://github.com/PredixDev/px-buttons-design"
   ]'
   selected-options="{{selectedOptions}}"
-  tabs='["Basic","Other"]' selected-tab="{{selectedTab}}">
+  tabs='["Basic","Split","Buttons"]' selected-tab="{{selectedTab}}">
 
 <!-- FOR 'Basic' TAB -->
 <template is="dom-if" if="[[_tabIs('Basic',selectedTab)]]" restamp="true">
-
 <section data-slot="demoHTML">
-
 <span class="form-field input-group">
   <input class="text-input input--regular" type="text">
   <span class="input-group__addon">.00</span>
 </span>
 </section>
+</template>
 
-<section data-slot="import">
-@import 'px-input-group-design/_objects.input-group.scss';
+<!-- FOR 'SPLIT' TAB -->
+<template is="dom-if" if="[[_tabIs('Split',selectedTab)]]" restamp="true">
+<section data-slot="demoHTML">
+<div class="form-field input-group style-scope local-element-demo">
+  <span class="input-group__addon style-scope local-element-demo">$</span>
+  <input class="text-input style-scope local-element-demo" type="text">
+  <span class="input-group__addon style-scope local-element-demo">.00</span>
+</div>
 </section>
-
 </template>
 
 <!-- FOR 'OTHER' TAB -->
-<template is="dom-if" if="[[_tabIs('Other',selectedTab)]]" restamp="true">
-
+<template is="dom-if" if="[[_tabIs('Buttons',selectedTab)]]" restamp="true">
 <section data-slot="demoHTML">
-
 <div class="form-field input-group">
   <input class="text-input">
   <button class="btn input-group__addon" type="button">Options</button>
   <button class="btn btn--primary input-group__addon" type="button">Search</button>
 </div>
 </section>
+</template>
+
+<!-- 4: Import -->
 
 <section data-slot="import">
 @import 'px-input-group-design/_objects.input-group.scss';
 </section>
-
-</template>
 
 
 <!-- 5: Set Usage HTML -->
@@ -98,24 +101,6 @@ Use the following HTML to set up your project:
 <script>
   Polymer({
     is: 'local-element-demo',
-
-    // attached : function(){
-    //   var boundHandler = this._handleOptionsUpdated.bind(this); 
-    //   this.addEventListener('px-sass-doc-options-updated', boundHandler)
-    // },
-    
-    // detached : function(){
-    //   this.removeEventListener('px-sass-doc-options-updated', boundHandler);
-    // },
-
-    // _handleOptionsUpdated : function(evt) {
-    //   //call functions created below
-    //   this.cssClasses = this._calcCssClasses();
-    //   this.importCode = this._importCode();
-
-    //   // Wait, then tell the highlighter to run after dom-if restamps
-    //   this.async(function(){ this.fire('px-sass-doc-demo-updated', {}) }, 10);
-    // },
 
     _tabIs : function(tabName) {
     var selected = this.selectedTab || "";

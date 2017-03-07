@@ -1,3 +1,7 @@
+v1.1.4
+==================
+* added example to demo (#3)
+
 v1.1.3
 ==================
 * updated to new demo using px-demo classes
