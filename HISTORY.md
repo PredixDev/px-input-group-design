@@ -1,3 +1,7 @@
+v2.0.0-prerelease
+==================
+* updated dependencies for design refresh
+
 v1.1.4
 ==================
 * added example to demo (#3)
